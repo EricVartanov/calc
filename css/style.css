@@ -1,0 +1,134 @@
+section {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-width: 1250px;
+    position: relative;
+    z-index: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Proxima Nova Condensed', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+    /* standerd */
+    -moz-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* firefox specific */
+    -webkit-user-select: none;
+    /* Chrome, Opera and Safari*/
+    -ms-user-select: none;
+    /* IE, ms-edge */
+    overflow-x: hidden;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.calc_wrapper {
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: black;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 10px;
+}
+
+.display {
+    border-radius: 15px;
+    height: 120px;
+    padding: 20px;
+    background: white;
+    font-size: 40px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.calc {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: grey;
+    cursor: pointer;
+    border: 0;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(3),
+.btn:nth-child(7),
+.btn:nth-child(11),
+.btn:nth-child(15) {
+    margin-left: 0;
+}
+
+
+
+
+
+.action {
+    background: orange;
+}
+
+.result {
+    background: red;
+}
+
+.number {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.del-btn {
+    width: 240px;
+    border-radius: 50px;
+    background: lightgrey;
+}
+
+.null {
+    width: 155px;
+    border-radius: 50px;
+}
